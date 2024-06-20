@@ -13,6 +13,7 @@
 		3F522DD82C23E6B000CA3D3E /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F522DD72C23E6B000CA3D3E /* ValidationError.swift */; };
 		3F522DDA2C23E6C100CA3D3E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */; };
 		3F522DDC2C23E6CF00CA3D3E /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */; };
+		3F522DDE2C23ED8700CA3D3E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3F522DDD2C23ED8700CA3D3E /* .gitignore */; };
 		3F9957082C22B2CE00B5EF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9957072C22B2CE00B5EF96 /* AppDelegate.swift */; };
 		3F99570A2C22B2CE00B5EF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9957092C22B2CE00B5EF96 /* SceneDelegate.swift */; };
 		3F99570C2C22B2CE00B5EF96 /* GreetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99570B2C22B2CE00B5EF96 /* GreetingVC.swift */; };
@@ -28,6 +29,7 @@
 		3F522DD72C23E6B000CA3D3E /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		3F522DDD2C23ED8700CA3D3E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3F9957042C22B2CE00B5EF96 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9957072C22B2CE00B5EF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9957092C22B2CE00B5EF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		3F9956FB2C22B2CE00B5EF96 = {
 			isa = PBXGroup;
 			children = (
+				3F522DDD2C23ED8700CA3D3E /* .gitignore */,
 				3F9957062C22B2CE00B5EF96 /* TodoApp */,
 				3F9957052C22B2CE00B5EF96 /* Products */,
 				7750E42FF2221C67316DD702 /* Pods */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9957142C22B2CF00B5EF96 /* LaunchScreen.storyboard in Resources */,
+				3F522DDE2C23ED8700CA3D3E /* .gitignore in Resources */,
 				3F9957112C22B2CF00B5EF96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
