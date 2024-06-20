@@ -14,11 +14,16 @@
 		3F522DDA2C23E6C100CA3D3E /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */; };
 		3F522DDC2C23E6CF00CA3D3E /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */; };
 		3F522DDE2C23ED8700CA3D3E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3F522DDD2C23ED8700CA3D3E /* .gitignore */; };
+		3F53FD2E2C23F52E006A2E82 /* MyBucketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53FD2D2C23F52E006A2E82 /* MyBucketVC.swift */; };
+		3F53FD302C23F6A1006A2E82 /* OurBucketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53FD2F2C23F6A1006A2E82 /* OurBucketVC.swift */; };
+		3F53FD322C23F6B9006A2E82 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F53FD312C23F6B9006A2E82 /* MainTabBarController.swift */; };
 		3F9957082C22B2CE00B5EF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9957072C22B2CE00B5EF96 /* AppDelegate.swift */; };
 		3F99570A2C22B2CE00B5EF96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9957092C22B2CE00B5EF96 /* SceneDelegate.swift */; };
 		3F99570C2C22B2CE00B5EF96 /* GreetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99570B2C22B2CE00B5EF96 /* GreetingVC.swift */; };
 		3F9957112C22B2CF00B5EF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9957102C22B2CF00B5EF96 /* Assets.xcassets */; };
 		3F9957142C22B2CF00B5EF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9957122C22B2CF00B5EF96 /* LaunchScreen.storyboard */; };
+		3FE0BE9B2C24031900FA5E0C /* UserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0BE9A2C24031900FA5E0C /* UserInfoResponse.swift */; };
+		3FE0BE9D2C24032600FA5E0C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0BE9C2C24032600FA5E0C /* UserInfo.swift */; };
 		EF69A025EEA105B213A1AC68 /* Pods_TodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19ED28FF535A88C0A441D70 /* Pods_TodoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,9 @@
 		3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		3F522DDD2C23ED8700CA3D3E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		3F53FD2D2C23F52E006A2E82 /* MyBucketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucketVC.swift; sourceTree = "<group>"; };
+		3F53FD2F2C23F6A1006A2E82 /* OurBucketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurBucketVC.swift; sourceTree = "<group>"; };
+		3F53FD312C23F6B9006A2E82 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3F9957042C22B2CE00B5EF96 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9957072C22B2CE00B5EF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9957092C22B2CE00B5EF96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,8 @@
 		3F9957102C22B2CF00B5EF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9957132C22B2CF00B5EF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9957152C22B2CF00B5EF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE0BE9A2C24031900FA5E0C /* UserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponse.swift; sourceTree = "<group>"; };
+		3FE0BE9C2C24032600FA5E0C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		7D788F694B59DD71AD215158 /* Pods-TodoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp.release.xcconfig"; path = "Target Support Files/Pods-TodoApp/Pods-TodoApp.release.xcconfig"; sourceTree = "<group>"; };
 		A95D167B79CEA5ACFEF7A3B6 /* Pods-TodoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp.debug.xcconfig"; path = "Target Support Files/Pods-TodoApp/Pods-TodoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C19ED28FF535A88C0A441D70 /* Pods_TodoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,15 +91,44 @@
 				3F9957102C22B2CF00B5EF96 /* Assets.xcassets */,
 				3F9957122C22B2CF00B5EF96 /* LaunchScreen.storyboard */,
 				3F9957152C22B2CF00B5EF96 /* Info.plist */,
+				3FE0BE9E2C24033400FA5E0C /* Response */,
+				3FE0BE9F2C24035E00FA5E0C /* Model */,
+				3FE0BEA02C24037800FA5E0C /* Controller */,
+			);
+			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		3FE0BE9E2C24033400FA5E0C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3F522DD72C23E6B000CA3D3E /* ValidationError.swift */,
+				3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */,
+				3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */,
+				3FE0BE9A2C24031900FA5E0C /* UserInfoResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		3FE0BE9F2C24035E00FA5E0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FE0BE9C2C24032600FA5E0C /* UserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FE0BEA02C24037800FA5E0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				3F99570B2C22B2CE00B5EF96 /* GreetingVC.swift */,
 				3F1973D72C22EBAC00BC8531 /* SignUpFirstVC.swift */,
 				3F1973D92C22EBC100BC8531 /* SignUpSecondVC.swift */,
 				3F1973DD2C23059B00BC8531 /* SignInVC.swift */,
-				3F522DD72C23E6B000CA3D3E /* ValidationError.swift */,
-				3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */,
-				3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */,
+				3F53FD312C23F6B9006A2E82 /* MainTabBarController.swift */,
+				3F53FD2D2C23F52E006A2E82 /* MyBucketVC.swift */,
+				3F53FD2F2C23F6A1006A2E82 /* OurBucketVC.swift */,
 			);
-			path = TodoApp;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		7750E42FF2221C67316DD702 /* Pods */ = {
@@ -224,14 +263,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE0BE9B2C24031900FA5E0C /* UserInfoResponse.swift in Sources */,
 				3F99570C2C22B2CE00B5EF96 /* GreetingVC.swift in Sources */,
 				3F522DDC2C23E6CF00CA3D3E /* SignUpResponse.swift in Sources */,
+				3F53FD322C23F6B9006A2E82 /* MainTabBarController.swift in Sources */,
+				3F53FD302C23F6A1006A2E82 /* OurBucketVC.swift in Sources */,
 				3F1973D82C22EBAC00BC8531 /* SignUpFirstVC.swift in Sources */,
 				3F522DD82C23E6B000CA3D3E /* ValidationError.swift in Sources */,
 				3F1973DA2C22EBC100BC8531 /* SignUpSecondVC.swift in Sources */,
 				3F1973DE2C23059B00BC8531 /* SignInVC.swift in Sources */,
 				3F9957082C22B2CE00B5EF96 /* AppDelegate.swift in Sources */,
 				3F522DDA2C23E6C100CA3D3E /* LoginResponse.swift in Sources */,
+				3F53FD2E2C23F52E006A2E82 /* MyBucketVC.swift in Sources */,
+				3FE0BE9D2C24032600FA5E0C /* UserInfo.swift in Sources */,
 				3F99570A2C22B2CE00B5EF96 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

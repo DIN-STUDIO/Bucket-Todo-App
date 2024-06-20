@@ -132,7 +132,7 @@ class SignUpFirstVC: UIViewController {
         let parameters: [String: Any] = ["email": email, "password": password, "nickname": nickName]
         
         // 파라미터 출력 (디버깅용)
-        print("Parameters: \(parameters)")
+        print("[SignUpSecondVC 출력] Parameters: \(parameters)")
         
         AF.request("http://na2ru2.me:5152/members", method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .validate(statusCode: 200..<300)
@@ -140,7 +140,7 @@ class SignUpFirstVC: UIViewController {
                 switch response.result {
                 case .success(let signUpResponse):
                     if let httpResponse = response.response, httpResponse.statusCode == 201 {
-                        print("Response JSON: \(signUpResponse)")  // 서버로부터 응답 받은 JSON 출력
+                        print("[SignUpSecondVC 출력] Response JSON: \(signUpResponse)")  // 서버로부터 응답 받은 JSON 출력
                         DispatchQueue.main.async {
                             let signUpSecondVC = SignUpSecondVC()
                             self.navigationController?.pushViewController(signUpSecondVC, animated: true)
@@ -150,7 +150,7 @@ class SignUpFirstVC: UIViewController {
                     if let data = response.data {
                         do {
                             let signUpResponse = try JSONDecoder().decode(SignUpResponse.self, from: data)
-                            print("Response JSON: \(signUpResponse)")  // 서버로부터 응답 받은 JSON 출력
+                            print("[SignUpSecondVC 출력] Response JSON: \(signUpResponse)")  // 서버로부터 응답 받은 JSON 출력
                             if let validationErrors = signUpResponse.validationErrors {
                                 let errors = validationErrors.map { $0.reason }.joined(separator: "\n")
                                 DispatchQueue.main.async {
@@ -162,7 +162,7 @@ class SignUpFirstVC: UIViewController {
                                 }
                             }
                         } catch {
-                            print("Failed to parse JSON: \(error)")
+                            print("[SignUpSecondVC 출력] Failed to parse JSON: \(error)")
                             DispatchQueue.main.async {
                                 self.showAlert(message: "알 수 없는 에러가 발생했습니다.")
                             }
