@@ -22,8 +22,13 @@
 		3F99570C2C22B2CE00B5EF96 /* GreetingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99570B2C22B2CE00B5EF96 /* GreetingVC.swift */; };
 		3F9957112C22B2CF00B5EF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9957102C22B2CF00B5EF96 /* Assets.xcassets */; };
 		3F9957142C22B2CF00B5EF96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9957122C22B2CF00B5EF96 /* LaunchScreen.storyboard */; };
+		3FAF33DC2C24282500B52D11 /* AddBucketModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF33DB2C24282500B52D11 /* AddBucketModal.swift */; };
 		3FE0BE9B2C24031900FA5E0C /* UserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0BE9A2C24031900FA5E0C /* UserInfoResponse.swift */; };
 		3FE0BE9D2C24032600FA5E0C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0BE9C2C24032600FA5E0C /* UserInfo.swift */; };
+		3FF815002C24A4DF001BC8E0 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF814FF2C24A4DF001BC8E0 /* Bucket.swift */; };
+		3FF815022C24A818001BC8E0 /* BucketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF815012C24A818001BC8E0 /* BucketResponse.swift */; };
+		3FF815042C24ACEF001BC8E0 /* BucketListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF815032C24ACEF001BC8E0 /* BucketListResponse.swift */; };
+		3FF815062C24B16A001BC8E0 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF815052C24B16A001BC8E0 /* ErrorResponse.swift */; };
 		EF69A025EEA105B213A1AC68 /* Pods_TodoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19ED28FF535A88C0A441D70 /* Pods_TodoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +50,13 @@
 		3F9957102C22B2CF00B5EF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9957132C22B2CF00B5EF96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9957152C22B2CF00B5EF96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAF33DB2C24282500B52D11 /* AddBucketModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketModal.swift; sourceTree = "<group>"; };
 		3FE0BE9A2C24031900FA5E0C /* UserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponse.swift; sourceTree = "<group>"; };
 		3FE0BE9C2C24032600FA5E0C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		3FF814FF2C24A4DF001BC8E0 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		3FF815012C24A818001BC8E0 /* BucketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketResponse.swift; sourceTree = "<group>"; };
+		3FF815032C24ACEF001BC8E0 /* BucketListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListResponse.swift; sourceTree = "<group>"; };
+		3FF815052C24B16A001BC8E0 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		7D788F694B59DD71AD215158 /* Pods-TodoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp.release.xcconfig"; path = "Target Support Files/Pods-TodoApp/Pods-TodoApp.release.xcconfig"; sourceTree = "<group>"; };
 		A95D167B79CEA5ACFEF7A3B6 /* Pods-TodoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoApp.debug.xcconfig"; path = "Target Support Files/Pods-TodoApp/Pods-TodoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C19ED28FF535A88C0A441D70 /* Pods_TodoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,11 +101,20 @@
 				3F9957102C22B2CF00B5EF96 /* Assets.xcassets */,
 				3F9957122C22B2CF00B5EF96 /* LaunchScreen.storyboard */,
 				3F9957152C22B2CF00B5EF96 /* Info.plist */,
+				3FAF33DA2C2427FF00B52D11 /* Modal */,
 				3FE0BE9E2C24033400FA5E0C /* Response */,
 				3FE0BE9F2C24035E00FA5E0C /* Model */,
 				3FE0BEA02C24037800FA5E0C /* Controller */,
 			);
 			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		3FAF33DA2C2427FF00B52D11 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				3FAF33DB2C24282500B52D11 /* AddBucketModal.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		3FE0BE9E2C24033400FA5E0C /* Response */ = {
@@ -105,6 +124,9 @@
 				3F522DD92C23E6C100CA3D3E /* LoginResponse.swift */,
 				3F522DDB2C23E6CF00CA3D3E /* SignUpResponse.swift */,
 				3FE0BE9A2C24031900FA5E0C /* UserInfoResponse.swift */,
+				3FF815012C24A818001BC8E0 /* BucketResponse.swift */,
+				3FF815032C24ACEF001BC8E0 /* BucketListResponse.swift */,
+				3FF815052C24B16A001BC8E0 /* ErrorResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -113,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE0BE9C2C24032600FA5E0C /* UserInfo.swift */,
+				3FF814FF2C24A4DF001BC8E0 /* Bucket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,18 +288,23 @@
 			files = (
 				3FE0BE9B2C24031900FA5E0C /* UserInfoResponse.swift in Sources */,
 				3F99570C2C22B2CE00B5EF96 /* GreetingVC.swift in Sources */,
+				3FF815042C24ACEF001BC8E0 /* BucketListResponse.swift in Sources */,
 				3F522DDC2C23E6CF00CA3D3E /* SignUpResponse.swift in Sources */,
 				3F53FD322C23F6B9006A2E82 /* MainTabBarController.swift in Sources */,
 				3F53FD302C23F6A1006A2E82 /* OurBucketVC.swift in Sources */,
+				3FF815002C24A4DF001BC8E0 /* Bucket.swift in Sources */,
 				3F1973D82C22EBAC00BC8531 /* SignUpFirstVC.swift in Sources */,
 				3F522DD82C23E6B000CA3D3E /* ValidationError.swift in Sources */,
 				3F1973DA2C22EBC100BC8531 /* SignUpSecondVC.swift in Sources */,
 				3F1973DE2C23059B00BC8531 /* SignInVC.swift in Sources */,
+				3FAF33DC2C24282500B52D11 /* AddBucketModal.swift in Sources */,
 				3F9957082C22B2CE00B5EF96 /* AppDelegate.swift in Sources */,
 				3F522DDA2C23E6C100CA3D3E /* LoginResponse.swift in Sources */,
 				3F53FD2E2C23F52E006A2E82 /* MyBucketVC.swift in Sources */,
 				3FE0BE9D2C24032600FA5E0C /* UserInfo.swift in Sources */,
+				3FF815062C24B16A001BC8E0 /* ErrorResponse.swift in Sources */,
 				3F99570A2C22B2CE00B5EF96 /* SceneDelegate.swift in Sources */,
+				3FF815022C24A818001BC8E0 /* BucketResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

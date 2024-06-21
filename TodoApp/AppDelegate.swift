@@ -3,10 +3,25 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let initialViewController: UIViewController
+        if let _ = UserDefaults.standard.string(forKey: "jwtToken") {
+            // JWT 토큰이 존재하면 MyBucketVC로 이동
+            initialViewController = MainTabBarController()
+            
+        } else {
+            // JWT 토큰이 없으면 SignInVC로 이동
+            initialViewController = GreetingVC()
+        }
+        
+        window?.rootViewController = UINavigationController(rootViewController: initialViewController)
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
