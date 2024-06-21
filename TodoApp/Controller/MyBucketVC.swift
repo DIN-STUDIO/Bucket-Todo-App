@@ -55,6 +55,7 @@ class MyBucketVC: UIViewController {
         // 테이블뷰 설정
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
         tableView.register(BucketCell.self, forCellReuseIdentifier: "BucketCell")
         
         // 버튼을 뷰에 추가
@@ -204,16 +205,35 @@ extension MyBucketVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BucketCell", for: indexPath) as! BucketCell
         let bucket = bucketList[indexPath.row]
-        cell.configure(title: bucket.content)
+        cell.configure(bucket: bucket)
+        cell.detailButton.addTarget(self, action: #selector(detailButtonTapped(_:)), for: .touchUpInside)
+        cell.detailButton.tag = indexPath.row // 버튼에 태그로 인덱스 설정
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100 // 셀의 높이를 증가시켜 여백을 포함
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // 셀의 contentView에 하단 여백 추가
+        let bottomSpace: CGFloat = 20
+        let maskLayer = CALayer()
+        maskLayer.frame = CGRect(x: 0, y: cell.contentView.frame.height - bottomSpace, width: cell.contentView.frame.width, height: bottomSpace)
+        maskLayer.backgroundColor = UIColor.white.cgColor
+        cell.contentView.layer.addSublayer(maskLayer)
+    }
+    
+    @objc func detailButtonTapped(_ sender: UIButton) {
+        let index = sender.tag
+        let bucket = bucketList[index]
+        let todoVC = TodoVC()
+        todoVC.bucketContent = bucket.content
+        todoVC.bucketId = bucket.bucketId // bucketId를 전달
+        self.navigationController?.pushViewController(todoVC, animated: true)
     }
 }
 
-// 커스텀 셀 구현
 class BucketCell: UITableViewCell {
     
     let heartButton = UIButton()
@@ -229,6 +249,7 @@ class BucketCell: UITableViewCell {
         // 하트 버튼 설정
         heartButton.setImage(UIImage(named: "heart"), for: .normal)
         heartButton.tintColor = UIColor(red: 255/255.0, green: 157/255.0, blue: 0/255.0, alpha: 1.0)
+        heartButton.contentMode = .scaleAspectFit // 이미지가 버튼에 맞게 조정되도록 설정
         
         // 타이틀 라벨 설정
         titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
@@ -251,7 +272,7 @@ class BucketCell: UITableViewCell {
         // 레이아웃 설정
         heartButton.snp.makeConstraints {
             $0.leading.equalTo(contentView).offset(10)
-            $0.top.equalTo(contentView).offset(10)
+            $0.centerY.equalTo(contentView) // 버튼이 세로로 중앙에 위치하도록 설정
             $0.width.height.equalTo(30)
         }
         
@@ -261,9 +282,9 @@ class BucketCell: UITableViewCell {
         }
         
         detailButton.snp.makeConstraints {
-            $0.leading.equalTo(contentView).offset(10)
+            $0.leading.equalTo(contentView).offset(15)
             $0.top.equalTo(titleLabel.snp.bottom).offset(10)
-            $0.width.equalTo(140)
+            $0.trailing.equalTo(contentView.snp.trailing).offset(-15)
             $0.height.equalTo(20) // 버튼 높이 줄이기
         }
     }
@@ -272,8 +293,7 @@ class BucketCell: UITableViewCell {
         fatalError("[MyBucketVC 발생] init(coder:) has not been implemented")
     }
     
-    func configure(title: String) {
-        titleLabel.text = title
+    func configure(bucket: Bucket) {
+        titleLabel.text = bucket.content
     }
 }
-
